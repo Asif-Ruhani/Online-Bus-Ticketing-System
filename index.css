@@ -159,3 +159,119 @@ nav{
     font-size: larger;
     margin-top: -20px;
 }
+
+
+
+
+
+
+/* Offer section styles */
+
+
+
+
+.OfferSection{
+    margin: 50px 250px;
+}  
+.C2{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.C2 h1{
+    font-size: 3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+.C2 button{
+    margin-top: 50px;
+    height: 60px;
+    width: 200px;
+    border-radius: 10px;
+    border: 1px solid #1dd100;
+    color: #1dd100;
+    font-size: larger;
+    background-color: white;
+}
+.OfferClass1{
+    /* border: 1px solid red; */
+    display: flex;
+    column-gap: 50px;
+}
+.OfferClass2, .OfferClass3{
+    width: 670px;
+    border-radius: 15px;
+    height: 220px;
+}    
+.OfferClass2{
+    background-color: #ffbf0f;
+    display: flex;
+}  
+.H1{
+    font-size: 3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+}    
+.OfferClass2 p, .OfferClass3 p{
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}      
+.C1{
+    color: rgba(0, 0, 0, 0.342);
+}  
+.OfferClass3 {
+    background-color: #f78c9c;
+    display: flex;
+}     
+.OfferClass2 img, .OfferClass3 img{
+    position: relative;
+    left: 100px;
+} 
+.BoxClass1{
+    margin-left: 100px;
+} 
+.BoxClass2{
+    position: relative;
+    left: 130px;
+    margin-top: 30px;
+}   
+.CouponCode{
+    margin-top: -2em;
+}   
+.p1{
+    margin-top: -1.3em;
+}  
+
+
+
+
+
+
+/* Ticket Purchase section styles */
+
+
+.TicketPurchaseOuterDiv{
+    border-top: 3px solid #1dd100;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    margin-top: 100px;
+}
+.DivClass1{
+    /* border: 1px solid red; */
+    margin: 100px auto;
+    width: 700px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.DivClass1 h1{
+    font-size: 3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+.DivClass1 p{
+    font-size: larger;
+    margin-top: -1.3em;
+}
