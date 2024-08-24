@@ -263,7 +263,7 @@ nav{
 }
 .DivClass1{
     /* border: 1px solid red; */
-    margin: 100px auto;
+    margin: 10px auto;
     width: 700px;
 
     display: flex;
