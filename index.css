@@ -251,6 +251,10 @@ nav{
 /* Ticket Purchase section styles */
 
 
+
+
+
+
 .TicketPurchaseOuterDiv{
     border-top: 3px solid #1dd100;
     border-top-left-radius: 80px;
@@ -500,6 +504,7 @@ hr{
    text-align: center;
    margin-top: 70px;
    font-size: xx-large;
+   padding-top: 20px;
 }
 .DivClass19 input{
    height: 40px;
