@@ -439,3 +439,65 @@ hr{
     position: relative;
     top: 630px;
 }
+
+
+
+
+
+/* Ticket confirmation section */
+
+
+
+.DivClass15{
+    background-color: rgba(128, 128, 128, 0.137);
+    width: 550px;
+    margin: 0px auto;
+    border-radius: 15px;
+}
+.DivClass16{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 30px;
+}
+.DivClass18{
+    margin-left: 38px;
+}
+
+.DivClass18 input{
+    height: 50px;
+    width: 450px; 
+    border-radius: 10px;  
+    padding-left: 20px;
+    font-size: large;
+    border: none;
+}
+
+.DivClass18 button{
+    height: 48px;
+    width: 120px;
+    border-radius: 10px;
+    font-size: large;
+    background-color: #1dd100;
+    border: none;
+
+    position: relative;
+    bottom: 50px;
+    left: 350px;
+}
+
+.DivClass17{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 40px;
+    margin-top: -1em;
+}
+
+.DivClass17 p{
+    font-size: large;
+    font-weight: bold;
+}
+#id4{
+   text-align: center;
+   margin-top: 70px;
+   font-size: xx-large;
+}
