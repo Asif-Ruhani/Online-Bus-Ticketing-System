@@ -412,7 +412,7 @@ hr{
     display: flex;
     justify-content: space-around;
 }
-.AllSeats button{
+.seats{
     /* border: 1px solid red; */
     height: 55px;
     width: 100px;
@@ -421,9 +421,17 @@ hr{
     margin-bottom: 15px;
     border: none;   
 }
+.seats button{
+    height: 55px;
+    width: 100px;
+    background-color: rgba(128, 128, 128, 0.185);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: none;
+}
 .A1-J1, .A2-J2, .A3-J3,.A4-J4{
     /* border: 1px solid red; */
-    width: 102px;
+    width: 100px;
 }
 .A1-J1 div, .A2-J2 div, .A3-J3 div, .A4-J4 div{
     /* border: 1px solid blue; */
@@ -531,4 +539,9 @@ hr{
     background-color: #1dd100;
     color: white;
     border: none;
+}
+
+
+.SeatsBgColor{
+    background-color: #1dd100;
 }
