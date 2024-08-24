@@ -350,3 +350,92 @@ nav{
   display: flex;
   justify-content: center;
 }
+
+.DivClass10{
+   display: flex;
+   margin: 0px 250px;
+
+}
+.DivClass11{
+   height: 1050px;
+   width: 700px;
+   background-color: #1cd10015;
+   border-radius: 10px;
+}
+.DivClass12{
+   height: 1050px;
+   width: 650px;
+   background-color: #1cd10015;
+   border-radius: 10px;
+}
+hr{
+    border: 1px dashed rgba(0, 0, 0, 0.363);
+}
+.DivClass13{
+    display: flex;
+    justify-content: space-around;
+}
+.DivClass14{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#id3{
+    text-align: center;
+    font-size: xx-large;
+}
+#driver{
+    background-color: rgba(128, 128, 128, 0.39);
+    height: 55px;
+    width: 100px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    top: 30px;
+    left: 580px
+
+   
+}
+#driver img{
+    height: 50px;
+    width: 50px;
+}
+.AllSeats{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.AllSeats button{
+    /* border: 1px solid red; */
+    height: 55px;
+    width: 100px;
+    background-color: rgba(128, 128, 128, 0.39);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: none;   
+}
+.A1-J1, .A2-J2, .A3-J3,.A4-J4{
+    /* border: 1px solid red; */
+    width: 102px;
+}
+.A1-J1 div, .A2-J2 div, .A3-J3 div, .A4-J4 div{
+    /* border: 1px solid blue; */
+}
+.LeftSideLetter div{
+    /* border: 1px solid red; */
+    height: 50px;
+    width: 10px;
+    margin-bottom: 15px;
+    /* border: none */
+}
+.LeftSideLetter div p{
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#J3{
+    position: relative;
+    top: 630px;
+}
