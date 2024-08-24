@@ -275,3 +275,78 @@ nav{
     font-size: larger;
     margin-top: -1.3em;
 }
+.DivClass2{
+    margin: 50px 250px;
+    /* border: 1px solid red; */
+}
+.DivClass3{
+    /* border: 1px solid red; */
+    background-color: #1cd10015;
+    border-radius: 20px;
+    margin-top: -40px;
+}
+.DivClass4{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.DivClass5, .DivClass6{
+    display: flex;
+    align-items: center;
+}
+.DivClass5 img{
+    height: 60px;
+    width: 100px;
+    margin-right: 20px;
+}
+.DivClass6 img{
+    height: 70px;
+    width: 70px;
+    margin-right: 20px;
+}
+.DivClass5 div h2, .DivClass6 div h2{
+    font-size: 2em;
+}
+.DivClass5 div p, .DivClass6 div p{
+    font-size:larger;
+    margin-top: -1em;
+}
+.DivClass7{
+    background-color: rgba(128, 128, 128, 0.089);
+    /* border: 1px solid blue; */
+    width: 1000px;
+    margin: 20px auto;
+}
+.DivClass8{
+   /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed black;
+    height: 70px;
+    padding: 0px 10px;
+}
+.DivClass8 p,h3, .DivClass9 div p{
+    font-size: larger;
+}
+.DivClass9{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    gap: 157px;
+    /* border: 1px solid blue; */
+    padding-bottom: 20px;
+}
+.DivClass9 div{
+  /* border: 1px slid red; */
+  background-color: rgba(128, 128, 128, 0.37);
+  border-radius: 10px;
+  width: 230px;
+  
+
+  display: flex;
+  justify-content: center;
+}
