@@ -1,0 +1,161 @@
+
+/* Navigation section styles */
+
+nav{
+    margin: 50px 250px;
+}
+.NavClass1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.NavClass1 ul{
+    display: flex;
+    align-items: center;
+    column-gap: 80px;
+    list-style: none;
+    font-size: larger;
+}
+.NavClass1 h1{
+    font-size: xx-large;
+}
+.NavClass1 span{
+    color: #1dd100;
+}
+.NavClass2{
+    border: 1px solid #1dd100;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    height: 50px;
+    width: 100px;
+    padding-left: 16px;
+    background-color: #1cd1001f;
+    border-radius: 5px;
+}
+.NavClass2 p{
+    font-size: x-large;
+    color: #1dd100;
+}
+.NavClass2 img{
+    height: 28px;
+    width: 30px;
+}
+.SearchBar{
+    /* border: 1px solid red; */
+    display: flex;
+   justify-content: center;
+   height: 60px;
+   margin-top: 70px;
+}
+.SearchBar input{
+    height: 40px;
+    width: 500px;
+    padding-left: 20px;
+    font-size: larger;
+
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.SearchBar button{
+    height: 46px;
+    width: 150px;
+    margin-left: 5px;
+    background-color: #1cd10034;
+    border: 1px solid #1dd100;
+    font-size: larger;
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+
+
+
+
+/* Banner section styles */
+
+
+.BannerSection{
+    margin: 50px 250px;
+}
+
+.BannerClass1{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 650px;
+
+    background-image: url('images/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.BannerClass1 h1{
+    color: white;
+    font-size: 3.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.BannerClass1 div{
+    /* border: 1px solid red; */
+    width: 800px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.BannerClass1 p{
+    color: white;
+    font-size: x-large;
+    line-height: 0px;
+}
+.BannerClass1 button{
+    margin-top: 30px;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+
+    height: 60px;
+    width: 200px;
+    border-radius: 8px;
+    background-color: #1dd100;
+    border: none;
+}
+#id1{
+    padding-top: 100px;
+}
+#id2{
+    color: #1dd100;
+    margin-top: -0.5em;
+}
+.BannerClass2{
+    display: flex;
+    justify-content: space-around;
+}
+.BannerClass3{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 250px;
+    border-bottom: 5px solid #1dd100;
+    background-color: white;
+
+    border-radius: 15px;
+    align-items: center;
+
+    position: relative;
+    bottom: 60px;
+}
+.BannerClass3 img{
+    height: 50px;
+    margin-right: 15px;
+    margin-left: 30px;
+}
+.BannerClass3 div h1{
+    font-size: 2em;
+}
+.BannerClass3 div p{
+    font-size: larger;
+    margin-top: -20px;
+}
