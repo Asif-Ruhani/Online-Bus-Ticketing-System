@@ -15,11 +15,32 @@ x2.innerText=reserveseats;
 let totalprice=document.getElementById('totalPrice');
 totalprice.innerText=totalPrice;
 
-let x4=document.getElementById('GrandTotal');
-x4.innerText=GrandTotal;
+let Grand_Total=document.getElementById('GrandTotal');
+Grand_Total.innerText=GrandTotal;
 
 
+       
+   function DiscountCalculation(totalPrice){
+       
+    document.getElementById('ApplyCoupon').addEventListener('click',function(){
+                  
+        const x5=document.getElementById('inputBox');
+        
+        if(x5.value === 'NEW15'){
+            Grand_Total.innerText=totalPrice-(totalPrice*0.15);
+        }
 
+        else if(x5.value === 'OLD20'){
+            Grand_Total.innerText=totalPrice-(totalPrice*0.20);
+        }
+
+        else{
+                 Grand_Total.innerText=totalPrice;
+        }
+
+    }) 
+
+   }
 
 
 
@@ -35,7 +56,7 @@ x4.innerText=GrandTotal;
     }
     else{
           
-        if(ReservedSeats.length<4){
+        if(ReservedSeats.length<=4){
             ReservedSeats.push(SeatName);
             i+=1;
             
@@ -68,20 +89,60 @@ x4.innerText=GrandTotal;
            
             let currentPrice=parseInt(seat_price.innerText);  // 550 ke integer a convert korlam
 
-            let total_price=parseInt(totalprice.innerText);   // total price keo integer a convert korlam
+             totalPrice=parseInt(totalprice.innerText);   // total price keo integer a convert korlam
 
             totalPrice+=currentPrice;   // total price ke increase korlam
 
             totalprice.innerText=totalPrice;
+            Grand_Total.innerText=totalPrice;
 
-            
+            DiscountCalculation(totalPrice);
 
 
         }
-        else{
-            console.log('Limit Over');
-            console.log('final array is = ',ReservedSeats);
-        }   
+
+
+
+
+
+
+
+        // else{
+        //     console.log('Limit Over');
+        //     console.log('final array is = ',ReservedSeats);
+
+
+
+        //     document.getElementById('ApplyCoupon').addEventListener('click',function(){
+                  
+        //         const x5=document.getElementById('inputBox');
+                
+        //         if(x5.value === 'NEW15'){
+        //             Grand_Total.innerText=totalPrice-(totalPrice*0.15);
+        //         }
+    
+        //         else if(x5.value === 'OLD20'){
+        //             Grand_Total.innerText=totalPrice-(totalPrice*0.20);
+        //         }
+    
+        //         else{
+        //                  Grand_Total.innerText=totalPrice;
+        //         }
+
+        //     }) 
+
+
+
+
+
+
+
+
+
+
+
+
+        // }   
     }  
 
 
