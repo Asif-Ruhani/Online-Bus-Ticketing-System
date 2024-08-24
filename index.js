@@ -19,6 +19,9 @@ let Grand_Total=document.getElementById('GrandTotal');
 Grand_Total.innerText=GrandTotal;
 
 
+
+
+
        
    function DiscountCalculation(totalPrice){
        
@@ -41,6 +44,11 @@ Grand_Total.innerText=GrandTotal;
     }) 
 
    }
+
+
+
+
+
 
 
 
@@ -101,56 +109,7 @@ Grand_Total.innerText=GrandTotal;
 
         }
 
-
-
-
-
-
-
-        // else{
-        //     console.log('Limit Over');
-        //     console.log('final array is = ',ReservedSeats);
-
-
-
-        //     document.getElementById('ApplyCoupon').addEventListener('click',function(){
-                  
-        //         const x5=document.getElementById('inputBox');
-                
-        //         if(x5.value === 'NEW15'){
-        //             Grand_Total.innerText=totalPrice-(totalPrice*0.15);
-        //         }
-    
-        //         else if(x5.value === 'OLD20'){
-        //             Grand_Total.innerText=totalPrice-(totalPrice*0.20);
-        //         }
-    
-        //         else{
-        //                  Grand_Total.innerText=totalPrice;
-        //         }
-
-        //     }) 
-
-
-
-
-
-
-
-
-
-
-
-
-        // }   
     }  
-
-
-      
-
-
-
-
 
   })
 
