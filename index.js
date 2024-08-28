@@ -113,6 +113,7 @@ function GetSeatName(){
 
 
 
+
 document.getElementById('ApplyCoupon').addEventListener('click',function(){  // this line execute when "Apply Coupon" button is clicked.
     
        if(TotalSeat<2){
@@ -147,10 +148,15 @@ document.getElementById('ApplyCoupon').addEventListener('click',function(){  // 
 })
 
  
+
+
  document.getElementById('DiscountAlarmButton').addEventListener('click',function(){
     const DiscountAlarm=document.getElementById('DiscountAlarm');
     DiscountAlarm.classList.add('DisplayHidden');
  })
+
+
+
 
 
   document.getElementById('TicketConfirmButton').addEventListener('click',function(){
@@ -172,6 +178,9 @@ document.getElementById('ApplyCoupon').addEventListener('click',function(){  // 
 
 
 
+
+
+  
   document.getElementById('ReservationConfirmationButton').addEventListener('click',function(){
    
     const name=document.getElementById('Name');
