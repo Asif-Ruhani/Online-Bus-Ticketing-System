@@ -155,21 +155,37 @@ document.getElementById('ApplyCoupon').addEventListener('click',function(){  // 
 
   document.getElementById('TicketConfirmButton').addEventListener('click',function(){
     
-    
-    
-    
     const name=document.getElementById('Name');
-    name.value='';
-
     const phone=document.getElementById('Phone');
-    phone.value='';
-
     const NID=document.getElementById('NID');
-    NID.value='';
+   
+    if(ReservedSeats.length>=1 && name.value!='' && phone.value!='' && NID.value!=''){
+        
+        const TokenID=document.getElementById('TokenId');
+        TokenID.innerText=Math.round(Math.random()*1000000);
+        
+        const ReserveConfirmation=document.getElementById('ReservationConfirmation');
+         ReserveConfirmation.classList.remove('DisplayHidden');
+    }
 
   })
 
 
+
+  document.getElementById('ReservationConfirmationButton').addEventListener('click',function(){
+   
+    const name=document.getElementById('Name');
+    const phone=document.getElementById('Phone');
+    const NID=document.getElementById('NID');
+
+    const ReserveConfirmDiv=document.getElementById('ReservationConfirmation');
+    ReserveConfirmDiv.classList.add('DisplayHidden'); 
+    
+    name.value='';
+    phone.value='';
+    NID.value='';
+
+  })
 
 
 

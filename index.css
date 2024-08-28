@@ -516,7 +516,7 @@ hr{
 }
 #id4{
    text-align: center;
-   margin-top: 70px;
+   margin-top: 50px;
    font-size: xx-large;
    padding-top: 20px;
 }
@@ -527,7 +527,7 @@ hr{
    padding-left: 15px;
    border-radius: 10px;
    margin-left: 53px;
-   margin-bottom: 20px;
+   margin-bottom: 10px;
 }
 .DivClass19 h3{
     margin-left: 53px;
@@ -601,6 +601,35 @@ hr{
 
 .SeatsBgColor{
     background-color: #1dd100;
+}
+#ReservationConfirmation{
+    height: 300px;
+    width: 750px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px #1dd100;
+    text-align: center;
+    border-radius: 20px;
+
+    position: relative;
+    bottom: 650px;
+    left: 930px;
+}
+#ReservationConfirmation h1{
+    font-size: 3em;
+    padding-top: 20px;
+}
+#ReservationConfirmation h3{
+    font-size: 1.5em;
+    margin-top: -0.7em;
+}
+#ReservationConfirmationButton{
+    height: 60px;
+    width: 150px;
+    background-color: #1cd10096;
+    font-size: x-large;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
 }
 
 .DisplayHidden{
