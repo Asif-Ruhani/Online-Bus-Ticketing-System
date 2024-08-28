@@ -5,12 +5,13 @@ let reserveseats=0;
 let i=0;
 let totalPrice=0;
 let GrandTotal=0;
+let TotalSeat=0;
 
-let x1=document.getElementById('AvailableSeats');
-x1.innerText=availableSeats;
+let CurrentAvailableSeats=document.getElementById('AvailableSeats');
+CurrentAvailableSeats.innerText=availableSeats;
 
-let x2=document.getElementById('ReservedSeats');
-x2.innerText=reserveseats;
+let CurrentReserveSeats=document.getElementById('ReservedSeats');
+CurrentReserveSeats.innerText=reserveseats;
 
 let totalprice=document.getElementById('totalPrice');
 totalprice.innerText=totalPrice;
@@ -22,96 +23,114 @@ Grand_Total.innerText=GrandTotal;
 
 
 
-       
-   function DiscountCalculation(totalPrice){
-       
-    document.getElementById('ApplyCoupon').addEventListener('click',function(){
-                  
-        const x5=document.getElementById('inputBox');
-        
-        if(x5.value === 'NEW15'){
-            Grand_Total.innerText=totalPrice-(totalPrice*0.15);
-        }
-
-        else if(x5.value === 'OLD20'){
-            Grand_Total.innerText=totalPrice-(totalPrice*0.20);
-        }
-
-        else{
-                 Grand_Total.innerText=totalPrice;
-        }
-
-    }) 
-
-   }
+GetSeatName(); // whend the project is run, this function will be called
 
 
 
 
+ function SeatAllocation(seatname){
 
-
-
-
-    document.addEventListener('click',function(event){   // get the button name that is clicked bu mouse
-    const SeatName=event.target.innerText;
-    // console.log(SeatName);
-    
-    
-    if(ReservedSeats.includes(SeatName)==true){
-        console.log('Already ache');
-        // console.log(array);
-        
+     if(ReservedSeats.includes(seatname)==true){
+        // console.log('This seat is already allocated');
     }
-    else{
+
+
+     else{
+             // One person can not reserve more than 4 seats 
+             if(ReservedSeats.length<4){
+                 ReservedSeats.push(seatname);
+                i++;
+
+                //  Update available & reserved seats
+                 CurrentAvailableSeats.innerText=availableSeats-i;
+                 CurrentReserveSeats.innerText=reserveseats+i;
+                
+                // Set selected seats's background color
+                 const SeatId=document.getElementById(seatname);
+                 SeatId.classList.add('SeatsBgColor');
+        
+    
+                //  Process is started to display seat's info.
+                 const SeatInfoArea=document.getElementById('ScrollingDiv');  // outer div, created to contain inner div.
+                 const EachSeatDiv= document.createElement('div')  // inner div, created dynamically to display each seat's info. 
+                
+                // Three paragraphs are created dynamically into inner div for seat name, class & price. and flex them.
+                const seat_name=document.createElement('p');
+                seat_name.innerText=seatname;
+    
+                const seat_class=document.createElement('p');
+                seat_class.innerText='Economy';
+    
+                const seat_price=document.createElement('p');
+                seat_price.innerText=parseInt('550');
+    
+                // append paragraphs into their parent div (inner div)
+                EachSeatDiv.appendChild(seat_name);
+                EachSeatDiv.appendChild(seat_class);
+                EachSeatDiv.appendChild(seat_price);
+                 
+                // Finally append inner div into it's parent div(Outer div).
+                SeatInfoArea.appendChild(EachSeatDiv);
+    
+                //  convert each seat price to integer.
+                 let currentPrice=parseInt(seat_price.innerText);  
+                
+                //  convert total price to integer
+                totalPrice=parseInt(totalprice.innerText);  
+                
+                // update total price after selecting a seat.
+                totalPrice+=currentPrice;
+                 
+                // Set the total price & grand price.
+                 totalprice.innerText=totalPrice;
+                 Grand_Total.innerText=totalPrice;
+            }
+    
+        } 
+}
+
+
+
+document.getElementById('ApplyCoupon').addEventListener('click',function(){  // this line execute when "Apply Coupon" button is clicked.
+    
+    const DiscountDisplay=document.getElementById('DiscountInfoDisplay');
+        const DiscountInputBox=document.getElementById('inputBox');
+
+                      if(DiscountInputBox.value === 'NEW15'){
+                        Grand_Total.innerText=totalPrice-(totalPrice*0.15);
+                        DiscountDisplay.innerText='Your have got 15% discount';
+                        
+                    }
+            
+                    else if(DiscountInputBox.value === 'OLD20'){
+                        Grand_Total.innerText=totalPrice-(totalPrice*0.20);
+                        DiscountDisplay.innerText='Your have got 20% discount';
+                       
+                    }
+            
+                    else{
+                             Grand_Total.innerText=totalPrice;
+                          
+                    }
+
+})
+
+
+
+
+    function GetSeatName(){
           
-        if(ReservedSeats.length<=4){
-            ReservedSeats.push(SeatName);
-            i+=1;
-            
-            x1.innerText=availableSeats-i;
-            x2.innerText=reserveseats+i;
-            
+    document.addEventListener('click',function(event){   // get the button name that is clicked bu mouse
+        const SeatName=event.target.innerText;
+        SeatAllocation(SeatName);
+    
+      })
 
-            const SeatId=document.getElementById(SeatName);
-            SeatId.classList.add('SeatsBgColor');
-            // console.log(ReservedSeats);
+  }
 
 
-            const SeatNumber=document.getElementById('SeatName');   // jei div er moddhe p banabo sei div er id nilam
-            const seat_name=document.createElement('p');
-            seat_name.innerText=SeatName;
-            SeatNumber.appendChild(seat_name);
-      
-      
-            const SeatClass=document.getElementById('SeatClass');   // jei div er moddhe p banabo sei div er id nilam
-            const seat_class=document.createElement('p');
-            seat_class.innerText='Economy';
-            SeatClass.appendChild(seat_class);
-      
-      
-            const SeatPrice=document.getElementById('SeatPrice');   // jei div er moddhe p banabo sei div er id nilam
-            const seat_price=document.createElement('p');
-            seat_price.innerText=parseInt('550');
-            SeatPrice.appendChild(seat_price);
 
-           
-            let currentPrice=parseInt(seat_price.innerText);  // 550 ke integer a convert korlam
-
-             totalPrice=parseInt(totalprice.innerText);   // total price keo integer a convert korlam
-
-            totalPrice+=currentPrice;   // total price ke increase korlam
-
-            totalprice.innerText=totalPrice;
-            Grand_Total.innerText=totalPrice;
-
-            DiscountCalculation(totalPrice);
-
-
-        }
-
-    }  
-
-  })
+    
 
 
 
