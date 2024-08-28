@@ -333,23 +333,18 @@
                                 <p>BDT <span id="GrandTotal"></span></p>
                               </div>
 
-                              <div id="DiscountAlarm" class="DisplayHidden">
-                                <p>You need 4 seats to get discount</p>
-                                <button id="DiscountAlarmButton">OK</button>
-                              </div>
-
                      </div>
 
 
                      <div class="DivClass19">
                         <h1 id="id4">Confirm Your Tickets</h1>
                         <h3>Passenger Name: </h3>
-                        <input type="text" placeholder="Enter your name">
+                        <input id="Name" type="text" placeholder="Enter your name">
                         <h3>Phone Number</h3>
-                        <input type="text" placeholder="Enter your phone number">
+                        <input id="Phone" type="text" placeholder="Enter your phone number">
                         <h3>NID Number</h3>
-                        <input type="text" placeholder="Enter your NID number">
-                        <div><button>Confirm</button></div>
+                        <input id="NID" type="text" placeholder="Enter your NID number">
+                        <div><button id="TicketConfirmButton">Confirm</button></div>
                      </div>
 
                 </div>
@@ -359,6 +354,13 @@
 
         </div>
 
+     </section>
+
+     <section>
+        <div id="DiscountAlarm" class="DisplayHidden">
+            <p>You need at least 2 seats to get discount</p>
+            <button id="DiscountAlarmButton">OK</button>
+          </div>
      </section>
 
      <script src="index.js"></script>
